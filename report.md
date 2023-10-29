@@ -56,4 +56,5 @@ Setelah model dibangun, evaluasi kinerjanya menggunakan metrik evaluasi yang ses
 Fungsi: MAE mengukur kesalahan rata-rata antara prediksi model dan nilai sebenarnya. Ini mengukur sejauh mana prediksi model mendekati harga sewa yang sebenarnya.
 Fungsi: MSE mengukur seberapa besar kesalahan kuadrat antara prediksi model dan nilai sebenarnya. Ini memberi bobot lebih besar kepada kesalahan besar.
 Fungsi: R2 mengukur sejauh mana variasi dalam harga sewa yang dijelaskan oleh model. Ini adalah pengukuran seberapa baik model Anda cocok dengan data.
+
 ![image](https://github.com/azkasena/House-rent-DecisionTree/assets/73009518/6a878371-9b13-4ac8-8b88-924a5f725cf5)
