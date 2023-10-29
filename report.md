@@ -3,13 +3,19 @@
 ## Domain Proyek 
   ### Latar Belakang
 
-Tempat tinggal merupakan seperti kewajiban untuk saat ini. Akan tetapi, tidak semua tempat tinggal atau rumah memilikinya dan hanya dapat menyewa. Prediksi harga sewa rumah (house rent) adalah masalah yang penting dalam industri _real estate_ dan memiliki dampak langsung pada penyewa, pemilik properti, dan pemangku kepentingan lainnya. Harga sewa rumah yang terlalu tinggi dapat membuat pengguna kesulitan untuk memenuhi kebutuhannya, sedangkan harga sewa rumah yang terlalu rendah dapat membuat pemilik rumah mengalami kerugian. Harga sewa rumah adalah faktor kunci dalam keputusan penyewa dan pemilik properti.  Prediksi harga sewa yang baik dapat meningkatkan efisiensi pasar _real estate_. Ini memungkinkan penyewa dan pemilik properti untuk membuat keputusan yang lebih baik. Dalam mencapai hal tersebut, maka dilakukan penelitian untuk memprediksi harga sewa rumah menggunakan _model machine learning_. Diharapkan model ini mampu memprediksi harga sewa yang sesuai dengan harga pasar. Prediksi ini nantinya dijadikan acuan bagi perusahaan dalam menyewa rumah dengan harga yang dapat mendatangkan profit bagi perusahaan.
+Tempat tinggal merupakan kebutuhan pokok yang esensial dalam kehidupan saat ini. Bagi sebagian orang, memiliki tempat tinggal sendiri adalah impian, namun tidak semua individu memiliki kemampuan untuk memiliki rumah sendiri. Sehingga, alternatif yang sering diambil adalah menyewa tempat tinggal. Prediksi harga sewa rumah adalah masalah yang memiliki dampak signifikan dalam industri _real estate_ dan berdampak langsung pada penyewa, pemilik properti, serta pihak-pihak terkait.
+
+Harga sewa rumah yang ditetapkan memegang peran penting. Harga sewa yang terlalu tinggi dapat mengakibatkan kesulitan bagi penyewa untuk memenuhi kebutuhan perumahan mereka. Di sisi lain, harga sewa yang terlalu rendah dapat mengakibatkan kerugian bagi pemilik properti. Oleh karena itu, penentuan harga sewa rumah harus memperhatikan keseimbangan antara keuntungan pemilik dan ketersediaan perumahan bagi penyewa.
+
+Prediksi harga sewa rumah memiliki implikasi besar dalam keputusan penyewa dan pemilik properti. Kemampuan memperkirakan harga sewa yang akurat adalah faktor kunci dalam efisiensi pasar real estate. Dengan memiliki prediksi harga sewa yang handal, penyewa dan pemilik properti dapat membuat keputusan yang lebih cerdas. Pengetahuan ini berdampak positif dalam mengurangi ketidakpastian di pasar, sehingga memberikan manfaat bagi seluruh pemangku kepentingan di dalamnya.
+
+Oleh karena itu, dalam upaya mencapai efisiensi pasar dan memberikan panduan yang tepat bagi pemilik properti dan penyewa, penelitian dalam bentuk prediksi harga sewa rumah menggunakan model _machine learning_ menjadi relevan. Diharapkan bahwa model ini mampu memberikan prediksi harga sewa yang sesuai dengan kondisi pasar. Prediksi ini akan menjadi pedoman yang sangat berharga bagi perusahaan dan individu dalam membuat keputusan sewa yang dapat mendatangkan keuntungan serta menjaga keseimbangan dalam industri _real estate_.
   
 Referensi: [Komparasi Algoritma Machine Learning Dalam Memprediksi Harga Rumah](https://ejournal.itn.ac.id/index.php/jati/article/view/6343) 
 
 ## _Business Understanding_
 
-Dalam industri _real estate_, prediksi harga sewa rumah memiliki peran penting dalam keputusan penyewa, pemilik properti, dan pemangku kepentingan lainnya. Tujuan utama dari proyek ini adalah memberikan prediksi harga sewa rumah yang akurat kepada pemilik properti, penyewa, investor, dan pihak terkait lainnya. Solusi yang dapat diambil adalah mengembangkan model prediksi harga sewa rumah menggunakan teknik _machine learning_. 
+Dalam industri _real estate_, prediksi harga sewa rumah memiliki peran penting dalam keputusan penyewa, pemilik properti, dan pemangku kepentingan lainnya. Tujuan utama dari proyek ini adalah memberikan prediksi harga sewa rumah yang akurat kepada pemilik properti, penyewa, investor, dan pihak terkait lainnya. Solusi yang dapat diambil adalah mengembangkan model prediksi harga sewa rumah menggunakan teknik _machine learning_.
 
 ### _Problem Statements_
 
