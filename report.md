@@ -8,11 +8,11 @@ Prediksi harga sewa rumah (house rent) adalah masalah yang penting dalam industr
 
 ## Business Understanding
 
-Dalam industri real estate, prediksi harga sewa rumah memiliki peran penting dalam keputusan penyewa, pemilik properti, dan pemangku kepentingan lainnya.
+Dalam industri real estate, prediksi harga sewa rumah memiliki peran penting dalam keputusan penyewa, pemilik properti, dan pemangku kepentingan lainnya.Tujuan utama dari proyek ini adalah memberikan prediksi harga sewa rumah yang akurat kepada pemilik properti, penyewa, investor, dan pihak terkait lainnya. Solusi yang dapat diambil adalah mengembangkan model prediksi harga sewa rumah menggunakan teknik machine learning. 
 
 ### Problem Statements
 
-Bagaimana hasil dapat memprediksi harga sewa rumah (house rent) dengan akurat berdasarkan atribut-atribut tertentu seperti jumlah kamar tidur (BHK), ukuran sewa, lantai, tipe area, status perabotan, jenis penyewa, jumlah kamar mandi yang diinginkan, dan lainnya?
+Bagaimana hasil akurasi agar dapat memprediksi harga sewa rumah (house rent) dengan akurat berdasarkan atribut-atribut tertentu seperti jumlah kamar tidur (BHK), ukuran sewa, lantai, tipe area, status perabotan, jenis penyewa, jumlah kamar mandi yang diinginkan, dan lainnya?
 
 ### Goals
 
@@ -24,47 +24,36 @@ Bagaimana hasil dapat memprediksi harga sewa rumah (house rent) dengan akurat be
     - Memilih model machine learning yang sesuai seperti Decision Tree untuk melakukan prediksi harga sewa.
 
 ## Data Understanding
-Data yang digunakan untuk prediksi harga sewa rumah adalah house_rent yang diambil dari Kaggle. Data ini berjumlah lebih dari 4700 data rumah yang terdiri dari 12 kolom yaitu, BHK, rent, size, floor, area type, area local, city, furnishing status, tenant preferred, bathroom, point of contact
+Data yang digunakan untuk prediksi harga sewa rumah adalah house_rent berbentuk csv yang diambil dari Kaggle. Data ini berjumlah lebih dari 4700 data rumah yang terdiri dari 12 kolom yaitu, BHK, rent, size, floor, area type, area local, city, furnishing status, tenant preferred, bathroom, point of contact.
 Link: [Kaggle](https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset).
 
 
 ### Variabel-variabel House rent adalah sebagai berikut:
-- accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
-- cuisine : merupakan jenis masakan yang disajikan pada restoran.
-- dst
+Posted On: Tanggal data diposting.
+BHK: Jumlah dari kamar tidur, aula, dan dapur.
+Rent: Harga sewa dari rumah/apartemen.
+Size: Luas dari rumah/apartemen dalam square feet (sqft).
+Floor: Letak dan jumlah lantai rumah/apartemen.
+Area Type: Ukuran dari rumah dalam kategori Super Area atau Carpet Area atau Build Area.
+Area Locality: Lokasi rumah/apartemen.
+City: Kota dimana rumah/apartemen berada.
+Furnishing Status: Status perabotan rumah/apartemen, baik Furnished atau Semi-Furnished atau Unfurnished.
+Tenant Preferred: Jenis penyewa yang diutamakan pemilik atau agen.
+Bathroom: Jumlah kamar mandi.
+Point of Contact: Kontak yang dihubungi untuk informasi lebih lanjut mengenai rumah/apartemen.
 
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Melakukan beberapa tahapan yang diperlukan untuk memahami data, contohnya teknik visualisasi data atau exploratory data analysis.
 
 ## Data Preparation
-Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan proses data preparation yang dilakukan
-- Menjelaskan alasan mengapa diperlukan tahapan data preparation tersebut.
+Pertama, data diupload ke google colab. Data kemudian akan diubah menjadi data kuantitatif pada kolom area type, city, furnishing status, dan point of contact. Pada area type carpet area : 1, super area : 2, built area : 3. Pada city Kolkata : 1, Delhi : 2, Mumbai : 3, Bangalore : 4, Hyderabad : 5, Chennai : 6. Pada furnishing status, unfurnished : 1, semi-furnished : 2, furnished : 3. Pada point of contact, contact owner : 1, contact agent : 2, contact builder : 3. Kemudian data akan dibagi menjadi train dan test dengan test size = 0.15
 
 ## Modeling
-Tahapan ini membahas mengenai model machine learning yang digunakan untuk menyelesaikan permasalahan. Anda perlu menjelaskan tahapan dan parameter yang digunakan pada proses pemodelan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan kelebihan dan kekurangan dari setiap algoritma yang digunakan.
-- Jika menggunakan satu algoritma pada solution statement, lakukan proses improvement terhadap model dengan hyperparameter tuning. **Jelaskan proses improvement yang dilakukan**.
-- Jika menggunakan dua atau lebih algoritma pada solution statement, maka pilih model terbaik sebagai solusi. **Jelaskan mengapa memilih model tersebut sebagai model terbaik**.
+Pembuatan model Machine Learning untuk prediksi harga sewa menggunakan Decision Tree adalah proses membangun model prediksi berdasarkan pohon keputusan. Pohon keputusan adalah algoritma pembelajaran mesin yang dapat digunakan baik untuk masalah klasifikasi maupun regresi terutama saat ingin memprediksi harga berkelanjutan. Decision tree relatif mudah diimplementasikan dan dipahami. Ada banyak alat dan pustaka yang tersedia, seperti scikit-learn di Python, yang memudahkan pembuatan, pelatihan, dan evaluasi model Decision Tree.
+Berikut adalah hasil dari pelatihan harga prediksi sewa rumah dengan harga aktual .
+![image](https://github.com/azkasena/House-rent-DecisionTree/assets/73009518/d39bcdb4-8527-401d-a628-10851188e330)
 
 ## Evaluation
-Pada bagian ini anda perlu menyebutkan metrik evaluasi yang digunakan. Lalu anda perlu menjelaskan hasil proyek berdasarkan metrik evaluasi yang digunakan.
-
-Sebagai contoh, Anda memiih kasus klasifikasi dan menggunakan metrik **akurasi, precision, recall, dan F1 score**. Jelaskan mengenai beberapa hal berikut:
-- Penjelasan mengenai metrik yang digunakan
-- Menjelaskan hasil proyek berdasarkan metrik evaluasi
-
-Ingatlah, metrik evaluasi yang digunakan harus sesuai dengan konteks data, problem statement, dan solusi yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**: 
-- Menjelaskan formula metrik dan bagaimana metrik tersebut bekerja.
-
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
+Setelah model dibangun, evaluasi kinerjanya menggunakan metrik evaluasi yang sesuai, seperti Mean Absolute Error (MAE), Mean Squared Error (MSE), dan R-squared (koefisien determinasi). Metrik ini membantu Anda memahami sejauh mana model Anda dapat memprediksi harga sewa dengan akurat. Hasilnya adalah MAE : 11965.626316193628, MSE : 917785754.6561476, R-squared : 917785754.6561476. 
+Fungsi: MAE mengukur kesalahan rata-rata antara prediksi model dan nilai sebenarnya. Ini mengukur sejauh mana prediksi model mendekati harga sewa yang sebenarnya.
+Fungsi: MSE mengukur seberapa besar kesalahan kuadrat antara prediksi model dan nilai sebenarnya. Ini memberi bobot lebih besar kepada kesalahan besar.
+Fungsi: R2 mengukur sejauh mana variasi dalam harga sewa yang dijelaskan oleh model. Ini adalah pengukuran seberapa baik model Anda cocok dengan data.
+![image](https://github.com/azkasena/House-rent-DecisionTree/assets/73009518/6a878371-9b13-4ac8-8b88-924a5f725cf5)
