@@ -1,50 +1,34 @@
 # Laporan Proyek Machine Learning - Azka Avicenna Rasjid
 
-## Domain 
+## Latar Belakang 
 
-Pada bagian ini, kamu perlu menuliskan latar belakang yang relevan dengan proyek yang diangkat.
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Jelaskan mengapa dan bagaimana masalah tersebut harus diselesaikan
-- Menyertakan hasil riset terkait atau referensi. Referensi yang diberikan harus berasal dari sumber yang kredibel dan author yang jelas.
+Prediksi harga sewa rumah (house rent) adalah masalah yang penting dalam industri real estate dan memiliki dampak langsung pada penyewa, pemilik properti, dan pemangku kepentingan lainnya. Harga sewa rumah yang terlalu tinggi dapat membuat pengguna kesulitan untuk memenuhi kebutuhannya, sedangkan harga sewa rumah yang terlalu rendah dapat membuat pemilik rumah mengalami kerugian. Harga sewa rumah adalah faktor kunci dalam keputusan penyewa dan pemilik properti.  Prediksi harga sewa yang baik dapat meningkatkan efisiensi pasar real estate. Ini memungkinkan penyewa dan pemilik properti untuk membuat keputusan yang lebih baik. 
   
-  Format Referensi: [Judul Referensi](https://scholar.google.com/) 
+  Format Referensi: [KOMPARASI ALGORITMA MACHINE LEARNING DALAM MEMPREDIKSI HARGA RUMAH](https://ejournal.itn.ac.id/index.php/jati/article/view/6343) 
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
-
-Bagian laporan ini mencakup:
+Dalam industri real estate, prediksi harga sewa rumah memiliki peran penting dalam keputusan penyewa, pemilik properti, dan pemangku kepentingan lainnya.
 
 ### Problem Statements
 
-Menjelaskan pernyataan masalah latar belakang:
-- Pernyataan Masalah 1
-- Pernyataan Masalah 2
-- Pernyataan Masalah n
+Bagaimana hasil dapat memprediksi harga sewa rumah (house rent) dengan akurat berdasarkan atribut-atribut tertentu seperti jumlah kamar tidur (BHK), ukuran sewa, lantai, tipe area, status perabotan, jenis penyewa, jumlah kamar mandi yang diinginkan, dan lainnya?
 
 ### Goals
 
-Menjelaskan tujuan dari pernyataan masalah:
-- Jawaban pernyataan masalah 1
-- Jawaban pernyataan masalah 2
-- Jawaban pernyataan masalah n
-
-Semua poin di atas harus diuraikan dengan jelas. Anda bebas menuliskan berapa pernyataan masalah dan juga goals yang diinginkan.
-
-**Rubrik/Kriteria Tambahan (Opsional)**:
-- Menambahkan bagian “Solution Statement” yang menguraikan cara untuk meraih goals. Bagian ini dibuat dengan ketentuan sebagai berikut: 
+- Mencapai tingkat akurasi yang tinggi dalam memprediksi harga sewa rumah agar penyewa dapat membuat keputusan yang cerdas dan pemilik properti dapat menetapkan harga sewa yang kompetitif.
+- Memungkinkan pemilik properti untuk memaksimalkan pendapatan mereka dengan menetapkan harga sewa yang tepat
 
     ### Solution statements
-    - Mengajukan 2 atau lebih solution statement. Misalnya, menggunakan dua atau lebih algoritma untuk mencapai solusi yang diinginkan atau melakukan improvement pada baseline model dengan hyperparameter tuning.
-    - Solusi yang diberikan harus dapat terukur dengan metrik evaluasi.
+    -  Mengumpulkan dan membersihkan data terkait, termasuk atribut-atribut seperti BHK, Rent Size, Floor, Area Type, Furnishing Status, Tenant, Preferred Bathroom, dan Point of Contact
+    - Memilih model machine learning yang sesuai seperti Decision Tree untuk melakukan prediksi harga sewa.
 
 ## Data Understanding
-Paragraf awal bagian ini menjelaskan informasi mengenai data yang Anda gunakan dalam proyek. Sertakan juga sumber atau tautan untuk mengunduh dataset. Contoh: [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Restaurant+%26+consumer+data).
+Data yang digunakan untuk prediksi harga sewa rumah adalah house_rent yang diambil dari Kaggle. Data ini berjumlah lebih dari 4700 data rumah yang terdiri dari 12 kolom yaitu, BHK, rent, size, floor, area type, area local, city, furnishing status, tenant preferred, bathroom, point of contact
+Link: [Kaggle](https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset).
 
-Selanjutnya uraikanlah seluruh variabel atau fitur pada data. Sebagai contoh:  
 
-### Variabel-variabel pada Restaurant UCI dataset adalah sebagai berikut:
+### Variabel-variabel House rent adalah sebagai berikut:
 - accepts : merupakan jenis pembayaran yang diterima pada restoran tertentu.
 - cuisine : merupakan jenis masakan yang disajikan pada restoran.
 - dst
